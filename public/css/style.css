@@ -1,0 +1,148 @@
+.popular-locations, 
+.featured {
+    margin: 0 auto 3rem;
+}
+.featured,
+.testimonials {
+    width: 90%;
+}
+h1 span {
+    color: #00dcff;
+}
+
+/* header section */
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 3rem;
+}
+.nav-link {
+    color: #fff !important;
+    font-weight: 400;
+}
+.nav-item:last-child {
+    background: green;
+}
+.header {
+    height: 100vh;
+    background: url('../images/home.jpeg') no-repeat;
+    background-size: cover;
+    filter: grayscale(10%);
+}
+.header-content {
+    width: 80%;
+    height: 80vh;
+}
+.header-content h1 {
+    font-weight: 600;
+    font-size: 3.6rem
+}
+.header-content form {
+    background: #FFF;
+    padding: 5px;
+}
+
+.header-content form .form-control, 
+.header-content form .form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+.header-content form .form-group:first-child .form-control:first-child {
+    width: 343px;
+}
+.header-content form .form-group:not(:nth-child(4)) {
+    border-right: 1px solid #beb7b7;
+}
+.header-content form .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* popular locations */
+.popular-locations-wrapper,
+.popular-locations,
+.popular-locations .card,
+.featured-wrapper {
+    background: #fbf9f9;
+}
+.popular-locations {
+    width: 80%;
+}
+.popular-locations img {
+    height: 100px;
+}
+.popular-locations .card-img-overlay {
+    padding: 0;
+}
+.popular-locations .card {
+    border: none;
+    /* padding: 0; */
+}
+
+/* featured */
+.featured img {
+    height: 200px;
+}
+.featured > .row > .col,
+.latest .row .col {
+    margin-bottom: 1.5rem;
+}
+.testimonials .card .card-footer,
+.featured .card .card-footer,
+.latest .card .card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+.featured .card .card-footer {
+    font-weight: bold;
+}
+.featured .card .card-footer .col:first-child {
+    text-align: left;
+}
+.featured .card .card-footer .col:last-child {
+    text-align: right;
+}
+
+/* testimonials */
+.testimonials img {
+    border-radius: 50%;
+    /* width: 40%; */
+    width: 160px;
+}
+.testimonials .card {
+    box-shadow: 20px 20px 5px #ece9e9;
+    margin-bottom: 5px;
+    padding: 2rem 0 1rem;
+}
+.testimonials .card:first-child {
+    margin-left: -150px;
+}
+.testimonials .card:nth-child(2) {
+    width: 684.667px !important;
+    height: 318px;
+}
+
+/* latest */
+.latest {
+    padding: 3em 0;
+    background: #fbf9f9;
+}
+
+/* subscribe */
+.subscribe {
+    background: #00dcff;
+    height: 50vh;
+    color: #fff;
+}
+.subscribe form {
+    padding: 3px;
+    background: #fff;
+    border-radius: 3px;
+}
+.subscribe form .form-control,
+.subscribe form .btn {
+    border: transparent;
+}
+.subscribe form .btn {
+    background: #00dcff;
+}
