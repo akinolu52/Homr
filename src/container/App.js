@@ -107,8 +107,8 @@ class App extends Component {
             </CardGroup>
           </section>
         </div>
-        <div className="featured-wrapper container d-flex">
-          <section className="featured">
+        <div className="featured-wrapper  d-flex">
+          <section className="featured container">
             <h1 className="mb-4 text-center">Featured Properties in <span>Lagos</span> </h1>
             <Row>
               <Col className="">
@@ -252,7 +252,7 @@ class App extends Component {
             </Row>
           </section>
            </div>
-        {/* <div className="testimonials text-center mx-auto" style={{ marginBottom: '50px'}}>
+        <div className="testimonials text-center mx-auto" style={{ marginBottom: '50px'}}>
           <h1 className="mb-4">What They Say About <span>Us</span> </h1> 
           <Swiper {...params}>
             <Card>
@@ -283,7 +283,7 @@ class App extends Component {
               </CardFooter>
             </Card>
           </Swiper>
-        </div> */}
+        </div>
         <div className="latest">
           <h1 className="mb-4 text-center">Latest News from <span>Us</span> </h1>
           <Container className=" d-flex">

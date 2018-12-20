@@ -81,9 +81,9 @@ h1 span {
 }
 
 /* featured */
-/* .featured .col {
-    display: flex;
-} */
+.featured .col {
+    flex-basis: 33%;
+}
 .featured img {
     height: 200px;
 }
@@ -118,13 +118,13 @@ h1 span {
     margin-bottom: 5px;
     padding: 2rem 0 1rem;
 }
-.testimonials .card:first-child {
+/* .testimonials .card:first-child {
     margin-left: -150px;
 }
 .testimonials .card:nth-child(2) {
     width: 684.667px !important;
     height: 318px;
-}
+} */
 
 /* latest */
 .latest {
