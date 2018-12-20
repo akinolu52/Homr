@@ -22,15 +22,17 @@ h1 span {
 }
 .nav-item:last-child {
     background: green;
+    padding: 1px;
+    width: 120px;
 }
 .header {
-    height: 100vh;
+    min-height: 100vh;
     background: url('../images/home.jpeg') no-repeat;
     background-size: cover;
     filter: grayscale(10%);
 }
 .header-content {
-    width: 80%;
+    min-width: 80%;
     height: 80vh;
 }
 .header-content h1 {
@@ -41,7 +43,6 @@ h1 span {
     background: #FFF;
     padding: 5px;
 }
-
 .header-content form .form-control, 
 .header-content form .form-control:focus {
     border: none;
@@ -80,6 +81,9 @@ h1 span {
 }
 
 /* featured */
+/* .featured .col {
+    display: flex;
+} */
 .featured img {
     height: 200px;
 }
@@ -146,3 +150,24 @@ h1 span {
 .subscribe form .btn {
     background: #00dcff;
 }
+
+@media all and (max-width: 767px) {
+    .header-content form .form-control {
+        width: 100% !important;
+        margin: auto;
+    }
+    .featured > .row > .col {
+        width: 100%;
+    }    
+
+}
+
+/* .div {
+    display: flex;
+    flex-wrap: wrap;
+}
+div > div {
+    flex-grow: 1;
+    width: 33%;
+    height: 100px;
+} */

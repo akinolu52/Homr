@@ -26,11 +26,7 @@ class App extends Component {
       slidesPerView: 3,
       spaceBetween: 30,
       freeMode: true,
-      grabCursor: true,
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: true,
-      // }
+      grabCursor: true
     };
     return (
       <Fragment>
@@ -79,31 +75,31 @@ class App extends Component {
           <section className="popular-locations">
             <CardGroup>
               <Card body inverse>
-                <CardImg width="10%" src="/images/lagos.jpg" alt="Card image cap" />
+                <CardImg width="10%" src="/images/lagos.jpg" alt="popular location" />
                 <CardImgOverlay className="d-flex justify-content-center align-items-center">
                   <CardTitle className="text-center">Lagos</CardTitle>
                 </CardImgOverlay>
               </Card>
               <Card body inverse>
-                <CardImg width="10%" src="/images/kaduna.jpg" alt="Card image cap" />
+                <CardImg width="10%" src="/images/kaduna.jpg" alt="popular location" />
                 <CardImgOverlay className="d-flex justify-content-center align-items-center">
                   <CardTitle className="text-center">Kaduna</CardTitle>
                 </CardImgOverlay>
               </Card>
               <Card body inverse>
-                <CardImg width="10%" src="/images/abuja.jpeg" alt="Card image cap" />
+                <CardImg width="10%" src="/images/abuja.jpeg" alt="popular location" />
                 <CardImgOverlay className="d-flex justify-content-center align-items-center">
                   <CardTitle className="text-center">Abuja</CardTitle>
                 </CardImgOverlay>
               </Card>
               <Card body inverse>
-                <CardImg width="10%" src="/images/rivers.jpg" alt="Card image cap" />
+                <CardImg width="10%" src="/images/rivers.jpg" alt="popular location" />
                 <CardImgOverlay className="d-flex justify-content-center align-items-center">
                   <CardTitle className="text-center">Rivers</CardTitle>
                 </CardImgOverlay>
               </Card>
               <Card body inverse>
-                <CardImg width="10%" src="/images/kebbi.jpg" alt="Card image cap" />
+                <CardImg width="10%" src="/images/kebbi.jpg" alt="popular location" />
                 <CardImgOverlay className="d-flex justify-content-center align-items-center">
                   <CardTitle className="text-center">Kebbi</CardTitle>
                 </CardImgOverlay>
@@ -111,13 +107,13 @@ class App extends Component {
             </CardGroup>
           </section>
         </div>
-        <div className="featured-wrapper">
-          <section className="featured container text-center">
-            <h1 className="mb-4">Featured Properties in <span>Lagos</span> </h1>
+        <div className="featured-wrapper container d-flex">
+          <section className="featured">
+            <h1 className="mb-4 text-center">Featured Properties in <span>Lagos</span> </h1>
             <Row>
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="House" />
                   <CardBody>
                     <Row>
                       <Col className="text-left">
@@ -138,9 +134,9 @@ class App extends Component {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_3.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_3.jpeg" alt="House" />
                   <CardBody>
                     <Row>
                       <Col className="text-left">
@@ -161,9 +157,9 @@ class App extends Component {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_2.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_2.jpeg" alt="House" />
                   <CardBody>
                     <Row>
                       <Col className="text-left">
@@ -184,9 +180,9 @@ class App extends Component {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_3.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_3.jpeg" alt="House" />
                   <CardBody>
                     <Row>
                       <Col className="text-left">
@@ -207,9 +203,9 @@ class App extends Component {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_2.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_2.jpeg" alt="House" />
                   <CardBody>
                     <Row>
                       <Col className="text-left">
@@ -230,9 +226,9 @@ class App extends Component {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="House" />
                   <CardBody>
                     <Row>
                       <Col className="text-left">
@@ -256,11 +252,11 @@ class App extends Component {
             </Row>
           </section>
            </div>
-        <div className="testimonials text-center mx-auto" style={{ marginBottom: '50px'}}>
+        {/* <div className="testimonials text-center mx-auto" style={{ marginBottom: '50px'}}>
           <h1 className="mb-4">What They Say About <span>Us</span> </h1> 
           <Swiper {...params}>
             <Card>
-              <img className="mx-auto" src="/images/man.png" alt="Card image cap" />
+              <img className="mx-auto" src="/images/man.png" alt="Man" />
               <CardBody className="pb-0">
                 <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
               </CardBody>
@@ -269,7 +265,7 @@ class App extends Component {
               </CardFooter>
             </Card>
             <Card>
-              <img className="mx-auto" src="/images/woman.png" alt="Card image cap" />
+              <img className="mx-auto" src="/images/woman.png" alt="Woman" />
               <CardBody className="pb-0">
                 <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
               </CardBody>
@@ -278,7 +274,7 @@ class App extends Component {
               </CardFooter>
             </Card>
             <Card>
-              <img className="mx-auto" src="/images/man.png" alt="Card image cap" />
+              <img className="mx-auto" src="/images/man.png" alt="Man" />
               <CardBody className="pb-0">
                 <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
               </CardBody>
@@ -287,14 +283,14 @@ class App extends Component {
               </CardFooter>
             </Card>
           </Swiper>
-        </div>
+        </div> */}
         <div className="latest">
           <h1 className="mb-4 text-center">Latest News from <span>Us</span> </h1>
-          <Container>
+          <Container className=" d-flex">
             <Row>
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="House" />
                   <CardBody className="pb-0">
                     <CardTitle>Lorem Ipsum donor <br></br> sit amet</CardTitle>
                     <CardText> amet consectetur adipisicing elit. Illo deserunt expedita distinctio numquam.</CardText>
@@ -305,9 +301,9 @@ class App extends Component {
                 </Card>
               </Col>
             
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="House" />
                   <CardBody className="pb-0">
                     <CardTitle>Lorem Ipsum donor <br></br> sit amet</CardTitle>
                     <CardText> amet consectetur adipisicing elit. Illo deserunt expedita distinctio numquam.</CardText>
@@ -318,9 +314,9 @@ class App extends Component {
                 </Card>
               </Col>
             
-              <Col className="col-4">
+              <Col className="">
                 <Card>
-                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="Card image cap" />
+                  <CardImg top width="100%" className="rounded" src="/images/house_1.jpeg" alt="House" />
                   <CardBody className="pb-0">
                     <CardTitle>Lorem Ipsum donor <br></br> sit amet</CardTitle>
                     <CardText> amet consectetur adipisicing elit. Illo deserunt expedita distinctio numquam.</CardText>
